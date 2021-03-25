@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="project1.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="addr4bit.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="addr4bit.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="addr4bit.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="addr4bit.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="addr4bit.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="addr4bit.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="addr4bit.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="addr4bit.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="addr4bit.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="addr4bit.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="addr4bit.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="addr4bit.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="addr4bit.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="addr4bit.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="addr4bit.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="addr4bit.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="addr4bit.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="addr4bit.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="addr4bit.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="addr4bit.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="addr4bit.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="addr4bit_addr4bit_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="addr4bit_addr4bit_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="addr4bit_addr4bit_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="addr4bit_addr4bit_sch_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="addr4bit_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="addr4bit_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="addr4bit_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="addr4bit_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="addr4bit_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="addr4bit_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="addr4bit_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="addr4bit_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="addr4bit_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="addr4bit_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="addr4bit_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="addr4bit_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="addr4bit_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="addr4bit_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="addr4bit_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="faddr.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="faddr.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="faddr.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="faddr.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="faddr.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="faddr.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="faddr.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="faddr.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="faddr.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="faddr.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="faddr.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="faddr.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="faddr.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="faddr.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="faddr.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="faddr.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="faddr.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="faddr.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="faddr.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="faddr_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="faddr_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="faddr_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="faddr_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="faddr_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="faddr_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="faddr_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="faddr_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="faddr_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="haddr.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="haddr.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="haddr.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="haddr.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="haddr.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="haddr.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="haddr.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="haddr.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="haddr.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="haddr.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="haddr.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="haddr.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="haddr.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="haddr.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="haddr.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="haddr.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="haddr.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="haddr.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="haddr.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="haddr_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="haddr_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="haddr_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="haddr_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="haddr_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="haddr_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="haddr_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="haddr_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="haddr_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1616689467" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1616689467">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1616693235" xil_pn:in_ck="-5606195514392627535" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1616693235">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="addr4bit_test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1616689473" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1213849700070164836" xil_pn:start_ts="1616689473">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1616695991" xil_pn:in_ck="-3239555472695450666" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4232513182645991038" xil_pn:start_ts="1616695990">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="addr4bit.vf"/>
+      <outfile xil_pn:name="faddr.vf"/>
+      <outfile xil_pn:name="haddr.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1616689475" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4002241084755465973" xil_pn:start_ts="1616689475">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1616695991" xil_pn:in_ck="-1501958063136430175" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1616695991">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="addr4bit.vf"/>
+      <outfile xil_pn:name="addr4bit_test.v"/>
+      <outfile xil_pn:name="faddr.vf"/>
+      <outfile xil_pn:name="haddr.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1616695994" xil_pn:in_ck="-1501958063136430175" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4736238249412428809" xil_pn:start_ts="1616695991">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="addr4bit_addr4bit_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="addr4bit_addr4bit_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1616695994" xil_pn:in_ck="-6101834414678547524" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3724265065317042202" xil_pn:start_ts="1616695994">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="addr4bit_addr4bit_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1616684445" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1616684445">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1616695889" xil_pn:in_ck="-3239555472695450666" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="2635538252271973315" xil_pn:start_ts="1616695886">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="addr4bit.vf"/>
+      <outfile xil_pn:name="faddr.vf"/>
+      <outfile xil_pn:name="haddr.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1616688512" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4002241084755465973" xil_pn:start_ts="1616688512">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1616684447" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1616684447">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1616688512" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-4456444524575571483" xil_pn:start_ts="1616688512">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1616684447" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1616684447">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1616689055" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="1301500066012363669" xil_pn:start_ts="1616689055">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1616695898" xil_pn:in_ck="7280010873604284912" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-3663068308972495320" xil_pn:start_ts="1616695889">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="addr4bit.jhd"/>
+      <outfile xil_pn:name="addr4bit.lso"/>
+      <outfile xil_pn:name="addr4bit.ngc"/>
+      <outfile xil_pn:name="addr4bit.ngr"/>
+      <outfile xil_pn:name="addr4bit.prj"/>
+      <outfile xil_pn:name="addr4bit.stx"/>
+      <outfile xil_pn:name="addr4bit.syr"/>
+      <outfile xil_pn:name="addr4bit.xst"/>
+      <outfile xil_pn:name="addr4bit_addr4bit_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="addr4bit_addr4bit_sch_tb_stx_beh.prj"/>
+      <outfile xil_pn:name="addr4bit_xst.xrpt"/>
+      <outfile xil_pn:name="faddr.ngr"/>
+      <outfile xil_pn:name="haddr.ngr"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1616689064" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784893407956777232" xil_pn:start_ts="1616689064">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1616695905" xil_pn:in_ck="-3188670941279973052" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1275487816808197380" xil_pn:start_ts="1616695898">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="addr4bit.bld"/>
+      <outfile xil_pn:name="addr4bit.ngd"/>
+      <outfile xil_pn:name="addr4bit_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1616695924" xil_pn:in_ck="-7848558605989721" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="2100985583056581773" xil_pn:start_ts="1616695905">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="addr4bit.pcf"/>
+      <outfile xil_pn:name="addr4bit_map.map"/>
+      <outfile xil_pn:name="addr4bit_map.mrp"/>
+      <outfile xil_pn:name="addr4bit_map.ncd"/>
+      <outfile xil_pn:name="addr4bit_map.ngm"/>
+      <outfile xil_pn:name="addr4bit_map.xrpt"/>
+      <outfile xil_pn:name="addr4bit_summary.xml"/>
+      <outfile xil_pn:name="addr4bit_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1616695951" xil_pn:in_ck="-1800783921434136494" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1616695924">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="addr4bit.ncd"/>
+      <outfile xil_pn:name="addr4bit.pad"/>
+      <outfile xil_pn:name="addr4bit.par"/>
+      <outfile xil_pn:name="addr4bit.ptwx"/>
+      <outfile xil_pn:name="addr4bit.unroutes"/>
+      <outfile xil_pn:name="addr4bit.xpi"/>
+      <outfile xil_pn:name="addr4bit_pad.csv"/>
+      <outfile xil_pn:name="addr4bit_pad.txt"/>
+      <outfile xil_pn:name="addr4bit_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1616695951" xil_pn:in_ck="4398710623747897755" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1616695940">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="addr4bit.twr"/>
+      <outfile xil_pn:name="addr4bit.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

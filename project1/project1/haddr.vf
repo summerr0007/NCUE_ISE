@@ -1,0 +1,40 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : haddr.vf
+// /___/   /\     Timestamp : 03/25/2021 23:00:46
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/haddr.vf -w C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/haddr.sch
+//Design Name: haddr
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module haddr(A, 
+             B, 
+             C, 
+             S);
+
+    input A;
+    input B;
+   output C;
+   output S;
+   
+   
+   XOR2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(S));
+   AND2  XLXI_3 (.I0(B), 
+                .I1(A), 
+                .O(C));
+endmodule

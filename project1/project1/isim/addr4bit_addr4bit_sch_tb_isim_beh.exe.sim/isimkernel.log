@@ -1,0 +1,29 @@
+Command line:
+   addr4bit_addr4bit_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58886
+
+Fri Mar 26 02:13:15 2021
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5150.72 Meg
+
+ Total Signals          : 390
+ Total Nets             : 85
+ Total Signal Drivers   : 71
+ Total Blocks           : 95
+ Total Primitive Blocks : 63
+ Total Processes        : 73
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 174
+Total Line Count : 41
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 4678.86 Meg
+
+Fri Mar 26 02:15:39 2021
+

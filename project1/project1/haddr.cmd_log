@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/haddr.xst" -ofn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/haddr.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 haddr.ngc haddr.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o haddr_map.ncd haddr.ngd haddr.pcf 
+par -w -intstyle ise -ol high -mt off haddr_map.ncd haddr.ncd haddr.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml haddr.twx haddr.ncd -o haddr.twr haddr.pcf 
+sch2sym -intstyle ise -family artix7 -refsym haddr C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/haddr.sch C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/haddr.sym 

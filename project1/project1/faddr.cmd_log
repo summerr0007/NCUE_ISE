@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/faddr.xst" -ofn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/faddr.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 faddr.ngc faddr.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o faddr_map.ncd faddr.ngd faddr.pcf 
+par -w -intstyle ise -ol high -mt off faddr_map.ncd faddr.ncd faddr.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml faddr.twx faddr.ncd -o faddr.twr faddr.pcf 
+sch2sym -intstyle ise -family artix7 -refsym faddr C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/faddr.sch C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/faddr.sym 

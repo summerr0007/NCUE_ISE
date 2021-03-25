@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit_addr4bit_sch_tb_isim_beh.exe" -prj "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit_addr4bit_sch_tb_beh.prj" "work.addr4bit_addr4bit_sch_tb" "work.glbl" 

@@ -1,0 +1,197 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : addr4bit.vf
+// /___/   /\     Timestamp : 03/26/2021 02:11:27
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.vf -w C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.sch
+//Design Name: addr4bit
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module haddr_MUSER_addr4bit(A, 
+                            B, 
+                            C, 
+                            S);
+
+    input A;
+    input B;
+   output C;
+   output S;
+   
+   
+   XOR2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(S));
+   AND2  XLXI_3 (.I0(B), 
+                .I1(A), 
+                .O(C));
+endmodule
+`timescale 1ns / 1ps
+
+module faddr_MUSER_addr4bit(A, 
+                            B, 
+                            Ci, 
+                            C, 
+                            S);
+
+    input A;
+    input B;
+    input Ci;
+   output C;
+   output S;
+   
+   wire XLXN_3;
+   wire XLXN_8;
+   wire XLXN_14;
+   
+   haddr_MUSER_addr4bit  XLXI_1 (.A(A), 
+                                .B(B), 
+                                .C(XLXN_14), 
+                                .S(XLXN_3));
+   haddr_MUSER_addr4bit  XLXI_2 (.A(Ci), 
+                                .B(XLXN_3), 
+                                .C(XLXN_8), 
+                                .S(S));
+   OR2  XLXI_5 (.I0(XLXN_14), 
+               .I1(XLXN_8), 
+               .O(C));
+endmodule
+`timescale 1ns / 1ps
+
+module addr4bit(A, 
+                B, 
+                M, 
+                S, 
+                Sign);
+
+    input [3:0] A;
+    input [3:0] B;
+    input M;
+   output [4:0] S;
+   output Sign;
+   
+   wire C5o;
+   wire St0;
+   wire St1;
+   wire St2;
+   wire St3;
+   wire St4;
+   wire Ts0;
+   wire Ts1;
+   wire Ts2;
+   wire Ts3;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_50;
+   wire XLXN_53;
+   wire XLXN_54;
+   wire XLXN_55;
+   wire XLXN_56;
+   wire zero;
+   wire Sign_DUMMY;
+   
+   assign Sign = Sign_DUMMY;
+   faddr_MUSER_addr4bit  XLXI_1 (.A(A[1]), 
+                                .B(XLXN_12), 
+                                .Ci(XLXN_6), 
+                                .C(XLXN_5), 
+                                .S(Ts1));
+   faddr_MUSER_addr4bit  XLXI_2 (.A(A[3]), 
+                                .B(XLXN_10), 
+                                .Ci(XLXN_4), 
+                                .C(XLXN_3), 
+                                .S(Ts3));
+   faddr_MUSER_addr4bit  XLXI_3 (.A(A[2]), 
+                                .B(XLXN_11), 
+                                .Ci(XLXN_5), 
+                                .C(XLXN_4), 
+                                .S(Ts2));
+   faddr_MUSER_addr4bit  XLXI_4 (.A(zero), 
+                                .B(XLXN_9), 
+                                .Ci(XLXN_3), 
+                                .C(C5o), 
+                                .S(XLXN_50));
+   faddr_MUSER_addr4bit  XLXI_5 (.A(A[0]), 
+                                .B(XLXN_13), 
+                                .Ci(M), 
+                                .C(XLXN_6), 
+                                .S(Ts0));
+   GND  XLXI_7 (.G(zero));
+   XOR2  XLXI_10 (.I0(M), 
+                 .I1(zero), 
+                 .O(XLXN_9));
+   XOR2  XLXI_11 (.I0(M), 
+                 .I1(B[3]), 
+                 .O(XLXN_10));
+   XOR2  XLXI_12 (.I0(M), 
+                 .I1(B[2]), 
+                 .O(XLXN_11));
+   XOR2  XLXI_13 (.I0(M), 
+                 .I1(B[1]), 
+                 .O(XLXN_12));
+   XOR2  XLXI_14 (.I0(M), 
+                 .I1(B[0]), 
+                 .O(XLXN_13));
+   XOR2  XLXI_15 (.I0(Sign_DUMMY), 
+                 .I1(XLXN_50), 
+                 .O(St4));
+   XOR2  XLXI_17 (.I0(Sign_DUMMY), 
+                 .I1(Ts3), 
+                 .O(St3));
+   XOR2  XLXI_18 (.I0(Sign_DUMMY), 
+                 .I1(Ts2), 
+                 .O(St2));
+   XOR2  XLXI_19 (.I0(Sign_DUMMY), 
+                 .I1(Ts1), 
+                 .O(St1));
+   XOR2  XLXI_20 (.I0(Sign_DUMMY), 
+                 .I1(Ts0), 
+                 .O(St0));
+   AND2  XLXI_21 (.I0(XLXN_50), 
+                 .I1(M), 
+                 .O(Sign_DUMMY));
+   faddr_MUSER_addr4bit  XLXI_22 (.A(St4), 
+                                 .B(zero), 
+                                 .Ci(XLXN_53), 
+                                 .C(), 
+                                 .S(S[4]));
+   faddr_MUSER_addr4bit  XLXI_23 (.A(St3), 
+                                 .B(zero), 
+                                 .Ci(XLXN_54), 
+                                 .C(XLXN_53), 
+                                 .S(S[3]));
+   faddr_MUSER_addr4bit  XLXI_24 (.A(St2), 
+                                 .B(zero), 
+                                 .Ci(XLXN_55), 
+                                 .C(XLXN_54), 
+                                 .S(S[2]));
+   faddr_MUSER_addr4bit  XLXI_25 (.A(St1), 
+                                 .B(zero), 
+                                 .Ci(XLXN_56), 
+                                 .C(XLXN_55), 
+                                 .S(S[1]));
+   faddr_MUSER_addr4bit  XLXI_26 (.A(St0), 
+                                 .B(zero), 
+                                 .Ci(Sign_DUMMY), 
+                                 .C(XLXN_56), 
+                                 .S(S[0]));
+endmodule

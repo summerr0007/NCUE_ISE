@@ -1,0 +1,55 @@
+xst -intstyle ise -ifn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.xst" -ofn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 addr4bit.ngc addr4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o addr4bit_map.ncd addr4bit.ngd addr4bit.pcf 
+par -w -intstyle ise -ol high -mt off addr4bit_map.ncd addr4bit.ncd addr4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml addr4bit.twx addr4bit.ncd -o addr4bit.twr addr4bit.pcf 
+xst -intstyle ise -ifn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.xst" -ofn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 addr4bit.ngc addr4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o addr4bit_map.ncd addr4bit.ngd addr4bit.pcf 
+par -w -intstyle ise -ol high -mt off addr4bit_map.ncd addr4bit.ncd addr4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml addr4bit.twx addr4bit.ncd -o addr4bit.twr addr4bit.pcf 
+xst -intstyle ise -ifn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.xst" -ofn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 addr4bit.ngc addr4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o addr4bit_map.ncd addr4bit.ngd addr4bit.pcf 
+par -w -intstyle ise -ol high -mt off addr4bit_map.ncd addr4bit.ncd addr4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml addr4bit.twx addr4bit.ncd -o addr4bit.twr addr4bit.pcf 
+xst -intstyle ise -ifn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.xst" -ofn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 addr4bit.ngc addr4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o addr4bit_map.ncd addr4bit.ngd addr4bit.pcf 
+par -w -intstyle ise -ol high -mt off addr4bit_map.ncd addr4bit.ncd addr4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml addr4bit.twx addr4bit.ncd -o addr4bit.twr addr4bit.pcf 
+xst -intstyle ise -ifn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.xst" -ofn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 addr4bit.ngc addr4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o addr4bit_map.ncd addr4bit.ngd addr4bit.pcf 
+par -w -intstyle ise -ol high -mt off addr4bit_map.ncd addr4bit.ncd addr4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml addr4bit.twx addr4bit.ncd -o addr4bit.twr addr4bit.pcf 
+xst -intstyle ise -ifn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.xst" -ofn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 addr4bit.ngc addr4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o addr4bit_map.ncd addr4bit.ngd addr4bit.pcf 
+par -w -intstyle ise -ol high -mt off addr4bit_map.ncd addr4bit.ncd addr4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml addr4bit.twx addr4bit.ncd -o addr4bit.twr addr4bit.pcf 
+xst -intstyle ise -ifn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.xst" -ofn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 addr4bit.ngc addr4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o addr4bit_map.ncd addr4bit.ngd addr4bit.pcf 
+par -w -intstyle ise -ol high -mt off addr4bit_map.ncd addr4bit.ncd addr4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml addr4bit.twx addr4bit.ncd -o addr4bit.twr addr4bit.pcf 
+xst -intstyle ise -ifn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.xst" -ofn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 addr4bit.ngc addr4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o addr4bit_map.ncd addr4bit.ngd addr4bit.pcf 
+par -w -intstyle ise -ol high -mt off addr4bit_map.ncd addr4bit.ncd addr4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml addr4bit.twx addr4bit.ncd -o addr4bit.twr addr4bit.pcf 
+xst -intstyle ise -ifn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.xst" -ofn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 addr4bit.ngc addr4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o addr4bit_map.ncd addr4bit.ngd addr4bit.pcf 
+par -w -intstyle ise -ol high -mt off addr4bit_map.ncd addr4bit.ncd addr4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml addr4bit.twx addr4bit.ncd -o addr4bit.twr addr4bit.pcf 
+xst -intstyle ise -ifn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.xst" -ofn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 addr4bit.ngc addr4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o addr4bit_map.ncd addr4bit.ngd addr4bit.pcf 
+par -w -intstyle ise -ol high -mt off addr4bit_map.ncd addr4bit.ncd addr4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml addr4bit.twx addr4bit.ncd -o addr4bit.twr addr4bit.pcf 
+xst -intstyle ise -ifn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.xst" -ofn "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project1/project1/addr4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 addr4bit.ngc addr4bit.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o addr4bit_map.ncd addr4bit.ngd addr4bit.pcf 
+par -w -intstyle ise -ol high -mt off addr4bit_map.ncd addr4bit.ncd addr4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml addr4bit.twx addr4bit.ncd -o addr4bit.twr addr4bit.pcf 

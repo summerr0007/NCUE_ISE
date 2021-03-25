@@ -1,0 +1,3 @@
+verilog work "haddr.vf"
+verilog work "faddr.vf"
+verilog work "addr4bit.vf"
