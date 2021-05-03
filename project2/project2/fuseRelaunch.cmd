@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project2/project2/p1_p1_sch_tb_isim_beh.exe" -prj "C:/Users/AAA/Documents/GitHub/NCUE_ISE/project2/project2/p1_p1_sch_tb_beh.prj" "work.p1_p1_sch_tb" "work.glbl" 

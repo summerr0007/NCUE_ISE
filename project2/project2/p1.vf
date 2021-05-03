@@ -1,0 +1,93 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : p1.vf
+// /___/   /\     Timestamp : 05/03/2021 11:24:49
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog C:/Users/AAA/Documents/GitHub/NCUE_ISE/project2/project2/p1.vf -w C:/Users/AAA/Documents/GitHub/NCUE_ISE/project2/project2/p1.sch
+//Design Name: p1
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module p1(clk, 
+          X, 
+          Y);
+
+    input clk;
+    input X;
+   output Y;
+   
+   wire nQ0;
+   wire nQ1;
+   wire nQ2;
+   wire nX;
+   wire Q0;
+   wire Q1;
+   wire Q2;
+   wire XLXN_29;
+   wire XLXN_40;
+   wire XLXN_51;
+   wire XLXN_53;
+   wire XLXN_54;
+   wire XLXN_77;
+   wire XLXN_98;
+   wire XLXN_99;
+   
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(clk), 
+              .D(XLXN_29), 
+              .Q(Q1));
+   FD #( .INIT(1'b0) ) XLXI_3 (.C(clk), 
+              .D(XLXN_40), 
+              .Q(Q0));
+   INV  XLXI_6 (.I(Q1), 
+               .O(nQ1));
+   INV  XLXI_25 (.I(Q0), 
+                .O(nQ0));
+   INV  XLXI_26 (.I(X), 
+                .O(nX));
+   OR3  XLXI_31 (.I0(XLXN_54), 
+                .I1(XLXN_53), 
+                .I2(XLXN_51), 
+                .O(XLXN_29));
+   AND3  XLXI_32 (.I0(Q0), 
+                 .I1(nQ1), 
+                 .I2(X), 
+                 .O(XLXN_51));
+   AND2  XLXI_33 (.I0(Q1), 
+                 .I1(nX), 
+                 .O(XLXN_53));
+   AND2  XLXI_34 (.I0(nQ0), 
+                 .I1(Q1), 
+                 .O(XLXN_54));
+   AND2  XLXI_35 (.I0(nQ0), 
+                 .I1(X), 
+                 .O(XLXN_40));
+   FD #( .INIT(1'b0) ) XLXI_42 (.C(clk), 
+               .D(XLXN_77), 
+               .Q(Q2));
+   AND2  XLXI_45 (.I0(Q1), 
+                 .I1(nQ2), 
+                 .O(Y));
+   INV  XLXI_46 (.I(Q2), 
+                .O(nQ2));
+   OR2  XLXI_50 (.I0(XLXN_99), 
+                .I1(XLXN_98), 
+                .O(XLXN_77));
+   AND2  XLXI_51 (.I0(nX), 
+                 .I1(nQ2), 
+                 .O(XLXN_98));
+   AND2  XLXI_52 (.I0(X), 
+                 .I1(Q2), 
+                 .O(XLXN_99));
+endmodule
