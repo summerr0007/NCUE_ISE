@@ -1,0 +1,439 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Reservoir_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Reservoir_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Reservoir_top"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Reservoir_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\AAA\Documents\GitHub\NCUE_ISE\project3\project3\Reservoir_top.v" into library work
+Parsing module <Reservoir_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Reservoir_top>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Reservoir_top>.
+    Related source file is "C:\Users\AAA\Documents\GitHub\NCUE_ISE\project3\project3\Reservoir_top.v".
+WARNING:Xst:647 - Input <req<1:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <out>.
+    Found 8-bit register for signal <electric>.
+    Found 8-bit register for signal <now>.
+    Found 8-bit subtractor for signal <now[7]_now[7]_sub_10_OUT> created at line 48.
+    Found 8-bit subtractor for signal <n0044> created at line 48.
+    Found 8-bit subtractor for signal <now[7]_now[7]_sub_14_OUT> created at line 51.
+    Found 7-bit adder for signal <n0039[6:0]> created at line 34.
+    Found 8-bit adder for signal <now[7]_rain[7]_add_4_OUT> created at line 40.
+    Found 8-bit adder for signal <now[7]_now[7]_add_11_OUT> created at line 48.
+    Found 8-bit comparator greater for signal <GND_1_o_now[7]_LessThan_6_o> created at line 41
+    Found 8-bit comparator lessequal for signal <n0007> created at line 47
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <Reservoir_top> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 3
+# Registers                                            : 3
+ 8-bit register                                        : 3
+# Comparators                                          : 2
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 3
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <electric_0> (without init value) has a constant value of 0 in block <Reservoir_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <electric_1> (without init value) has a constant value of 0 in block <Reservoir_top>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 3
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+# Comparators                                          : 2
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 3
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <electric_0> (without init value) has a constant value of 0 in block <Reservoir_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <electric_1> (without init value) has a constant value of 0 in block <Reservoir_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <out_0> in Unit <Reservoir_top> is equivalent to the following FF/Latch, which will be removed : <electric_2> 
+INFO:Xst:2261 - The FF/Latch <out_1> in Unit <Reservoir_top> is equivalent to the following FF/Latch, which will be removed : <electric_3> 
+INFO:Xst:2261 - The FF/Latch <out_2> in Unit <Reservoir_top> is equivalent to the following FF/Latch, which will be removed : <electric_4> 
+INFO:Xst:2261 - The FF/Latch <out_3> in Unit <Reservoir_top> is equivalent to the following FF/Latch, which will be removed : <electric_5> 
+INFO:Xst:2261 - The FF/Latch <out_4> in Unit <Reservoir_top> is equivalent to the following FF/Latch, which will be removed : <electric_6> 
+INFO:Xst:2261 - The FF/Latch <out_5> in Unit <Reservoir_top> is equivalent to the following FF/Latch, which will be removed : <electric_7> 
+
+Optimizing unit <Reservoir_top> ...
+WARNING:Xst:1710 - FF/Latch <now_5> (without init value) has a constant value of 0 in block <Reservoir_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <now_6> (without init value) has a constant value of 0 in block <Reservoir_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <now_7> (without init value) has a constant value of 0 in block <Reservoir_top>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Reservoir_top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Reservoir_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 118
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 2
+#      LUT2                        : 5
+#      LUT3                        : 7
+#      LUT4                        : 9
+#      LUT5                        : 20
+#      LUT6                        : 33
+#      MUXCY                       : 18
+#      VCC                         : 1
+#      XORCY                       : 21
+# FlipFlops/Latches                : 13
+#      FDC                         : 13
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 40
+#      IBUF                        : 16
+#      OBUF                        : 24
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              13  out of  126800     0%  
+ Number of Slice LUTs:                   77  out of  63400     0%  
+    Number used as Logic:                77  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     77
+   Number with an unused Flip Flop:      64  out of     77    83%  
+   Number with an unused LUT:             0  out of     77     0%  
+   Number of fully used LUT-FF pairs:    13  out of     77    16%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          42
+ Number of bonded IOBs:                  41  out of    210    19%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 13    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.937ns (Maximum Frequency: 168.427MHz)
+   Minimum input arrival time before clock: 5.657ns
+   Maximum output required time after clock: 0.645ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.937ns (frequency: 168.427MHz)
+  Total number of paths / destination ports: 89673 / 13
+-------------------------------------------------------------------------
+Delay:               5.937ns (Levels of Logic = 16)
+  Source:            now_0 (FF)
+  Destination:       now_4 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: now_0 to now_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.361   0.299  now_0 (now_0)
+     LUT2:I1->O            1   0.097   0.000  Madd_now[7]_rain[7]_add_4_OUT_lut<0> (Madd_now[7]_rain[7]_add_4_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Madd_now[7]_rain[7]_add_4_OUT_cy<0> (Madd_now[7]_rain[7]_add_4_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_now[7]_rain[7]_add_4_OUT_cy<1> (Madd_now[7]_rain[7]_add_4_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_now[7]_rain[7]_add_4_OUT_cy<2> (Madd_now[7]_rain[7]_add_4_OUT_cy<2>)
+     XORCY:CI->O          12   0.370   0.430  Madd_now[7]_rain[7]_add_4_OUT_xor<3> (now[7]_rain[7]_add_4_OUT<3>)
+     LUT4:I2->O            1   0.097   0.683  GND_1_o_now[7]_LessThan_6_o1_SW1 (N7)
+     LUT6:I1->O           18   0.097   0.374  GND_1_o_now[7]_LessThan_6_o21 (GND_1_o_now[7]_LessThan_6_o)
+     LUT5:I4->O            1   0.097   0.000  Msub_now[7]_now[7]_sub_10_OUT_lut<1> (Msub_now[7]_now[7]_sub_10_OUT_lut<1>)
+     MUXCY:S->O            1   0.353   0.000  Msub_now[7]_now[7]_sub_10_OUT_cy<1> (Msub_now[7]_now[7]_sub_10_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_now[7]_now[7]_sub_10_OUT_cy<2> (Msub_now[7]_now[7]_sub_10_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_now[7]_now[7]_sub_10_OUT_cy<3> (Msub_now[7]_now[7]_sub_10_OUT_cy<3>)
+     XORCY:CI->O          12   0.370   0.607  Msub_now[7]_now[7]_sub_10_OUT_xor<4> (now[7]_now[7]_sub_10_OUT<4>)
+     LUT4:I0->O            9   0.097   0.332  GND_1_o_now[7]_LessThan_9_o1 (GND_1_o_now[7]_LessThan_9_o)
+     LUT6:I5->O            1   0.097   0.000  Msub_now[7]_now[7]_sub_14_OUT_lut<3> (Msub_now[7]_now[7]_sub_14_OUT_lut<3>)
+     MUXCY:S->O            0   0.353   0.000  Msub_now[7]_now[7]_sub_14_OUT_cy<3> (Msub_now[7]_now[7]_sub_14_OUT_cy<3>)
+     XORCY:CI->O           1   0.370   0.000  Msub_now[7]_now[7]_sub_14_OUT_xor<4> (now[7]_now[7]_sub_14_OUT<4>)
+     FDC:D                     0.008          now_4
+    ----------------------------------------
+    Total                      5.937ns (3.212ns logic, 2.725ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 107757 / 26
+-------------------------------------------------------------------------
+Offset:              5.657ns (Levels of Logic = 17)
+  Source:            rain<0> (PAD)
+  Destination:       now_4 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rain<0> to now_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.379  rain_0_IBUF (rain_0_IBUF)
+     LUT2:I0->O            1   0.097   0.000  Madd_now[7]_rain[7]_add_4_OUT_lut<0> (Madd_now[7]_rain[7]_add_4_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Madd_now[7]_rain[7]_add_4_OUT_cy<0> (Madd_now[7]_rain[7]_add_4_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_now[7]_rain[7]_add_4_OUT_cy<1> (Madd_now[7]_rain[7]_add_4_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_now[7]_rain[7]_add_4_OUT_cy<2> (Madd_now[7]_rain[7]_add_4_OUT_cy<2>)
+     XORCY:CI->O          12   0.370   0.430  Madd_now[7]_rain[7]_add_4_OUT_xor<3> (now[7]_rain[7]_add_4_OUT<3>)
+     LUT4:I2->O            1   0.097   0.683  GND_1_o_now[7]_LessThan_6_o1_SW1 (N7)
+     LUT6:I1->O           18   0.097   0.374  GND_1_o_now[7]_LessThan_6_o21 (GND_1_o_now[7]_LessThan_6_o)
+     LUT5:I4->O            1   0.097   0.000  Msub_now[7]_now[7]_sub_10_OUT_lut<1> (Msub_now[7]_now[7]_sub_10_OUT_lut<1>)
+     MUXCY:S->O            1   0.353   0.000  Msub_now[7]_now[7]_sub_10_OUT_cy<1> (Msub_now[7]_now[7]_sub_10_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_now[7]_now[7]_sub_10_OUT_cy<2> (Msub_now[7]_now[7]_sub_10_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_now[7]_now[7]_sub_10_OUT_cy<3> (Msub_now[7]_now[7]_sub_10_OUT_cy<3>)
+     XORCY:CI->O          12   0.370   0.607  Msub_now[7]_now[7]_sub_10_OUT_xor<4> (now[7]_now[7]_sub_10_OUT<4>)
+     LUT4:I0->O            9   0.097   0.332  GND_1_o_now[7]_LessThan_9_o1 (GND_1_o_now[7]_LessThan_9_o)
+     LUT6:I5->O            1   0.097   0.000  Msub_now[7]_now[7]_sub_14_OUT_lut<3> (Msub_now[7]_now[7]_sub_14_OUT_lut<3>)
+     MUXCY:S->O            0   0.353   0.000  Msub_now[7]_now[7]_sub_14_OUT_cy<3> (Msub_now[7]_now[7]_sub_14_OUT_cy<3>)
+     XORCY:CI->O           1   0.370   0.000  Msub_now[7]_now[7]_sub_14_OUT_xor<4> (now[7]_now[7]_sub_14_OUT<4>)
+     FDC:D                     0.008          now_4
+    ----------------------------------------
+    Total                      5.657ns (2.852ns logic, 2.805ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              0.645ns (Levels of Logic = 1)
+  Source:            out_5 (FF)
+  Destination:       out<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: out_5 to out<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.361   0.283  out_5 (out_5)
+     OBUF:I->O                 0.000          out_5_OBUF (out<5>)
+    ----------------------------------------
+    Total                      0.645ns (0.361ns logic, 0.283ns route)
+                                       (56.0% logic, 44.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.937|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.26 secs
+ 
+--> 
+
+Total memory usage is 4617756 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+
